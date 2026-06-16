@@ -1,5 +1,5 @@
-FROM alpine:3.19.1
-RUN apk add --no-cache nodejs=~20
+FROM alpine:3.21.3
+RUN apk add --no-cache nodejs=~22
 WORKDIR /app
 COPY . .
 CMD ["node", "-v"]
